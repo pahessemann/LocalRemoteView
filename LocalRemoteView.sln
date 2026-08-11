@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalRemoteView.Shared", "src\LocalRemoteView.Shared\LocalRemoteView.Shared.csproj", "{5D10864E-BD4B-4B2A-A6F8-0018084EFD57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalRemoteView.Host", "src\LocalRemoteView.Host\LocalRemoteView.Host.csproj", "{A7D6160C-7C9A-4444-81AA-0E47C1F94202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalRemoteView.Client", "src\LocalRemoteView.Client\LocalRemoteView.Client.csproj", "{CF8EE979-BE20-4848-A456-7376FB191493}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D10864E-BD4B-4B2A-A6F8-0018084EFD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D10864E-BD4B-4B2A-A6F8-0018084EFD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D10864E-BD4B-4B2A-A6F8-0018084EFD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D10864E-BD4B-4B2A-A6F8-0018084EFD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D6160C-7C9A-4444-81AA-0E47C1F94202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D6160C-7C9A-4444-81AA-0E47C1F94202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D6160C-7C9A-4444-81AA-0E47C1F94202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D6160C-7C9A-4444-81AA-0E47C1F94202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8EE979-BE20-4848-A456-7376FB191493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8EE979-BE20-4848-A456-7376FB191493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8EE979-BE20-4848-A456-7376FB191493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8EE979-BE20-4848-A456-7376FB191493}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

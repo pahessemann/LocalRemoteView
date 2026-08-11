@@ -1,0 +1,12 @@
+.dotnet/
+.nuget/
+.templateengine/
+bin/
+obj/
+publish/
+artifacts/
+Livraison/
+Livraison-Corrigee/
+*.user
+*.log
+dotnet-install.ps1
