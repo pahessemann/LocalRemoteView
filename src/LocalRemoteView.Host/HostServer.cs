@@ -82,7 +82,11 @@ public sealed class HostServer
         var width = Math.Min(bounds.Width, _config.MaxWidth);
         var height = Math.Max(1, (int)Math.Round(bounds.Height * (width / (double)bounds.Width)));
         using var source = new Bitmap(bounds.Width, bounds.Height, PixelFormat.Format24bppRgb);
-        using (var g = Graphics.FromImage(source)) g.CopyFromScreen(bounds.Left, bounds.Top, 0, 0, bounds.Size, CopyPixelOperation.SourceCopy);
+        using (var g = Graphics.FromImage(source))
+        {
+            g.CopyFromScreen(bounds.Left, bounds.Top, 0, 0, bounds.Size, CopyPixelOperation.SourceCopy);
+            NativeCursor.Draw(g, bounds.Location);
+        }
         using var output = width == bounds.Width ? new Bitmap(source) : new Bitmap(source, width, height);
         using var ms = new MemoryStream();
         var codec = ImageCodecInfo.GetImageEncoders().First(x => x.FormatID == ImageFormat.Jpeg.Guid);

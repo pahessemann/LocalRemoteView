@@ -1,12 +1,23 @@
-.dotnet/
-.nuget/
-.templateengine/
-bin/
-obj/
-publish/
-artifacts/
-Livraison/
-Livraison-Corrigee/
+# SDK, caches et outils locaux
+/.dotnet/
+/.nuget/
+/.templateengine/
+/.vs/
+/.vscode/
+
+# Sorties .NET, publications et livrables binaires
+**/bin/
+**/obj/
+/publish/
+/artifacts/
+/Livraison/
+/Livraison-Corrigee/
+
+# Fichiers générés
+*.exe
+*.dll
+*.pdb
+*.nupkg
 *.user
 *.log
 dotnet-install.ps1
